@@ -1,0 +1,25 @@
+<div>
+  <div>STATUS: {{ status }}</div>
+  <div>Status string: {{ statusString }}</div>
+
+  <select (change)="conversationSelectHandler($event)">
+    <option selected disabled>Choose conversation</option>
+    <option *ngFor="let convo of conversations" [value]="convo.sid">{{convo.friendlyName}}</option>
+  </select>
+
+  <div class="convo">
+    <div id="messages">
+      <ul>
+        <li *ngFor="let m of messages">
+          <app-message [message]="m"></app-message>
+        </li>
+      </ul>
+    </div>
+    <input type="text" [(ngModel)]="newMessage" /> <button (click)="sendMessage()">Send</button>
+    <input type="file" (change)="fileChangeHandler($event)">
+  </div>
+
+  <div class="logout-ctn">
+    <button (click)="logout()">Logout</button>
+  </div>
+</div>
