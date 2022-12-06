@@ -1,0 +1,44 @@
+.header-main {
+    width: 100%;
+}
+.header-statusbar {
+    padding-right: 269px;
+    padding-left: 269px;
+    padding-top: 60px;
+    padding-bottom: 45px;
+    background-color: #0A423D;    
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+        font-size: 42px;
+        .logo_img {
+            height: 32px;
+        }
+    }
+    .menuItems {        
+        .menu_img {
+            height: 30.91px;
+            margin-right: 53px;
+        }
+    }
+    .user {
+        display: flex;
+        align-items: center;
+        .user_name {
+            font-weight: 600;
+        }
+        .user_icon {
+            border: 2px solid white;
+            border-radius: 20px;
+            height: 47px;
+            width: 47px;
+            margin-right: 18px;
+        }
+        .news_img {
+            width: 25.85px;
+            height: 25.79px;
+            margin-left: 48px;
+        }
+    }
+}

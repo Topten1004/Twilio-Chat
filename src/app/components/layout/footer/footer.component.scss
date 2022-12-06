@@ -1,0 +1,25 @@
+.footer-main {
+    background-color: #0A423D;
+    color: white;
+    padding-left: 109px;
+    padding-right: 109px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 74px;
+    .lock_footer {
+        margin-right: 16px;
+    }
+    .copyright { 
+        min-width: 601px;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 400;
+        font-family: 'SF Pro Display';
+        font-size: normal;
+    }
+    .encryped {
+        display: flex;        
+        align-items: center;
+    }
+}
