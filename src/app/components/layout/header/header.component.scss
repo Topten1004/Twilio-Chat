@@ -12,11 +12,16 @@
     justify-content: space-between;
     .logo {
         font-size: 42px;
+        display: flex;
+        align-items: center;
         .logo_img {
             height: 32px;
+            margin-right: 9.74px;
         }
     }
-    .menuItems {        
+    .menuItems {   
+        display: flex;     
+        align-items: center;
         .menu_img {
             height: 30.91px;
             margin-right: 53px;

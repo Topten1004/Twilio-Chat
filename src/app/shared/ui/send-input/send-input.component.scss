@@ -6,7 +6,7 @@
         input {        
             height: 56px;
             width: 100%;
-            padding-left: 6.07%;
+            padding-left: 61px;
             padding-right: 12%;
             border-radius: 20px;
             border: 0.5px solid #A5A5A5;
@@ -16,10 +16,27 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 24px;            
-        }        
-        img {
+        }    
+        .fistIcon {
             position: absolute;
-            right: 5%;
+            left: 20px;
+        }    
+
+        .send {
+            position: absolute;
+            right: 0px;
+            height: 100%;
+            width: 56px;
+            background-color: #0A423D;
+            border-radius: 20px;
+
+            .secondIcon {
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
         }
 
         ::placeholder {

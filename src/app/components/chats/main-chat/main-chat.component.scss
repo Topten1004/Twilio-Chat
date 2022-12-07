@@ -2,7 +2,8 @@
     border-radius: 20px;
     background: rgba(209, 235, 255, 0.75) ;
     padding-bottom: 21px;
-    height: calc(100vh - 389px);    
+    height: calc(100vh - 389px);
+    
     position: relative;
 
     .log_header {
@@ -19,6 +20,7 @@
         
         background: #0A423D;
         border-radius: 20px;
+        z-index: 1;
         
 
         .user_input {
@@ -48,13 +50,39 @@
         }        
     }
 
+    .union {
+        position: absolute;
+        right: 50%;
+        bottom: 86px;
+        width: 63px;
+        height: 56px;
+        background-color: #0A423D;
+        border-radius: 20px;
+        z-index: 1;
+
+        .unionIcon {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
     .send_msg {
         position: absolute;
         bottom: 7px;
         left: 15px;
         right: 15px;
-        width: calc(100% - 30px);
-
-       
+        width: calc(100% - 30px);   
+        z-index: 1;    
+    }
+    .chat_content {
+        position: absolute;
+        right: 15px;
+        left: 15px;
+        z-index: 0;        
+        overflow: auto;
+        height: calc(100vh - 389px);
+        padding-right: 18px;        
     }
 }

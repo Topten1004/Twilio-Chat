@@ -16,11 +16,23 @@
         <img src={{more_icon}} alt="" class="more">
     </div>
 
+    <div class="union">
+        <img src={{union_icon}} alt="icon" class="unionIcon">
+    </div>
+
     <div class="send_msg">
         <app-send-input
             [placeholder]="'Send a message...'"
             [firstIcon]="attachIcon"
             [secondIcon]="sendIcon"
         ></app-send-input>
+    </div>
+
+    <div class="chat_content">
+        <div *ngFor="let chatLog of present_chat" >
+            <app-show-chat
+                [content]="chatLog"
+            ></app-show-chat>
+        </div>
     </div>
 </div>
