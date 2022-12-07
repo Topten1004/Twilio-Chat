@@ -1,0 +1,29 @@
+.main {
+    .container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        input {        
+            height: 56px;
+            width: 100%;
+            padding-left: 6.07%;
+            padding-right: 12%;
+            border-radius: 20px;
+            border: 0.5px solid #A5A5A5;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;            
+        }        
+        img {
+            position: absolute;
+            right: 5%;
+        }
+
+        ::placeholder {
+            color: #A5A5A5;
+        }
+    }
+}

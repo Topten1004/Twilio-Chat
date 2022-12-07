@@ -1,0 +1,26 @@
+<div class="main">
+    <div class="log_header">
+        <div class="user_input" nz-row>
+            <div class="user" nz-col nzSpan="11">
+                <img src={{user_icon}} alt="user_icon" class="user_icon"/>
+                <div class="user_name">{{user_name}}</div>
+            </div>    
+            <div nz-col nzSpan="13">
+                <app-input-field
+                    [placeholder]="'Search Conversation..'"
+                    [iconImg]="searchIcon"
+                ></app-input-field>
+            </div>        
+        </div>
+        <img src={{camera_icon}} alt="" class="camera">
+        <img src={{more_icon}} alt="" class="more">
+    </div>
+
+    <div class="send_msg">
+        <app-send-input
+            [placeholder]="'Send a message...'"
+            [firstIcon]="attachIcon"
+            [secondIcon]="sendIcon"
+        ></app-send-input>
+    </div>
+</div>

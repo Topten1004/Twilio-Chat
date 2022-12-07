@@ -1,0 +1,61 @@
+.log-main {
+    .switch-div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        ::ng-deep {
+            app-switch {
+                height: 31px;
+            }
+        }
+        .switch-desc {
+            margin-left: 22px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #646464;
+        }
+    }
+
+    .button-div {
+        margin-top: 14px;
+        margin-bottom: 18px;
+        display: flex;
+        button {
+            height: 56px;
+            border-radius: 20px;
+            width: 100%;
+            ::ng-deep {
+                span {
+                    font-family: 'Poppins';
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 24px;
+                }
+            }
+        }
+        .selected_btn {
+            background: #0A423D;
+            border: 1px solid #0A423D;
+            color: white;
+        }
+        .unselected_btn {
+            border: 1px solid #0A423D;            
+            color: #0A423D;
+        }
+    }
+
+    .logs {
+        height: calc(100vh - 559px);
+        width: calc(100% + 10px);
+        overflow: auto;
+        padding-right: 10px;
+
+        .logs_div {
+            margin-bottom: 10px;
+        }
+    }
+}

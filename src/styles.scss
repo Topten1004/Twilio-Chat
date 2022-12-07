@@ -1,4 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~ng-zorro-antd/ng-zorro-antd.min.css";
+
 body {
     margin: 0px;
 }
+
+::-webkit-scrollbar {
+    width: 6px;
+  }
+::-webkit-scrollbar-track {
+    background-color: #F2F5FF;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #0A423D;
+    border-radius: 6px;
+  }

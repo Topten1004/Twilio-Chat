@@ -1,0 +1,29 @@
+<div class="log-main">
+    <div class="switch-div">
+        <app-switch></app-switch>
+        <div class="switch-desc">
+            Patients can see that you are online
+        </div>
+    </div>
+    <app-input-field
+        [placeholder]="userSearch_placeholder"
+        [iconImg]="userIcon"
+    ></app-input-field>
+
+    <div class="button-div" nz-row [nzGutter]="12">
+        <div nz-col class="gutter-row" [nzSpan]="12">
+            <button nz-button nzType="primary" class="selected_btn">Conversations</button>
+        </div>
+        <div nz-col class="gutter-row" [nzSpan]="12">
+            <button nz-button nzType="default" class="unselected_btn">Call Logs</button>        
+        </div>
+    </div>
+
+    <div class="logs">
+        <div *ngFor="let log of chat_history" class="logs_div">
+            <app-chat-log
+                [content]="log"
+            ></app-chat-log>
+        </div>
+    </div>
+</div>

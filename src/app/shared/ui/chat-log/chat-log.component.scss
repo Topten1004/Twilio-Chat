@@ -1,0 +1,50 @@
+.main {
+    height: 78px;
+    background: #F2F5FF;
+    border: 1px solid #0A423D ;
+    border-radius: 28px;
+
+    display: flex;
+    position: relative;
+
+    .active {
+        width: 7px;
+        height: 7px;
+        background-color: #FF6464;
+        border-radius: 3.5px;
+        outline: 6px solid rgba(255, 100, 100, 0.3);
+        position: absolute;
+        left: 23px;
+        top: 36px;
+    }
+
+    .content {
+        position: absolute;
+        left: 49px;
+        top: 15px;
+        right: 62px;
+        height: 49px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: #0A423D;
+        font-weight: 700;
+        overflow: hidden;
+        span {
+            color: #A5A5A5;
+            font-weight: 400;
+        }
+    }
+    .timeDuration {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    .sent {
+        background: #D9D9D9;
+        color: #646464;
+    }
+}
+

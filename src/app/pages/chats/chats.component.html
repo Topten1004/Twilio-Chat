@@ -2,4 +2,12 @@
     <div class="title">
         {{title}}
     </div>
+    <div class="chats-window" nz-row [nzGutter]="32">
+        <div nz-col class="log-window gutter-row" [nzSpan]="7">
+            <app-log></app-log>
+        </div>
+        <div nz-col class="main-chat gutter-row" [nzSpan]="17">
+            <app-main-chat></app-main-chat>
+        </div>
+    </div>
 </div>
