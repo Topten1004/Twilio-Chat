@@ -43,13 +43,15 @@
             color: white;
         }
         .unselected_btn {
+            background: white;
             border: 1px solid #0A423D;            
             color: #0A423D;
         }
     }
 
     .logs {
-        height: calc(100vh - 559px);
+        height: calc(100vh - 580px);
+        margin-bottom: 21px;
         width: calc(100% + 10px);
         overflow: auto;
         padding-right: 10px;

@@ -31,6 +31,7 @@ import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { SendInputComponent } from './shared/ui/send-input/send-input.component';
 import { ShowChatComponent } from './components/chats/show-chat/show-chat.component';
+import { CallLogComponent } from './shared/ui/call-log/call-log.component';
 
 registerLocaleData(en);
 
@@ -51,6 +52,7 @@ registerLocaleData(en);
     ChatLogComponent,
     SendInputComponent,
     ShowChatComponent,
+    CallLogComponent,
   ],
   imports: [
     BrowserModule,

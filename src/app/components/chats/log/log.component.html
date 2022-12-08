@@ -12,18 +12,40 @@
 
     <div class="button-div" nz-row [nzGutter]="12">
         <div nz-col class="gutter-row" [nzSpan]="12">
-            <button nz-button nzType="primary" class="selected_btn">Conversations</button>
+            <button 
+                nz-button nzType="primary"
+                (click)="onClickEvent_conv()"
+                [ngClass]="isConversationBtnClicked ? 'selected_btn' : 'unselected_btn' "
+            >
+                Conversations
+            </button>
         </div>
         <div nz-col class="gutter-row" [nzSpan]="12">
-            <button nz-button nzType="default" class="unselected_btn">Call Logs</button>        
+            <button 
+                nz-button nzType="default" 
+                (click)="onClickEvent_call()"
+                [ngClass]="isConversationBtnClicked ? 'unselected_btn' : 'selected_btn' "
+            >
+                Call Logs
+            </button>        
         </div>
     </div>
 
     <div class="logs">
-        <div *ngFor="let log of chat_history" class="logs_div">
-            <app-chat-log
-                [content]="log"
-            ></app-chat-log>
+        <div *ngIf="isConversationBtnClicked == true">
+            <div *ngFor="let log of chat_history" class="logs_div">
+                <app-chat-log
+                    [content]="log"                    
+                ></app-chat-log>            
+            </div>
+        </div>
+
+        <div *ngIf="isConversationBtnClicked == false">
+            <div *ngFor="let log of call_history" class="logs_div">                     
+                <app-call-log
+                    [content]="log"                
+                ></app-call-log>
+            </div>
         </div>
     </div>
 </div>

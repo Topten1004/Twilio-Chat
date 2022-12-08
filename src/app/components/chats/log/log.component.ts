@@ -49,7 +49,65 @@ export class LogComponent implements OnInit {
       timeDuration : '50m'
     }    
   ]
+  call_history : any[] = [
+    {
+      name : 'John Doe',
+      date : 'August 23, 2022',
+      timeDuration : '13',
+      time : '5:05pm'
+    },
+    {
+      name : 'John Doe',
+      date : 'August 23, 2022',
+      timeDuration : '13',
+      time : '5:05pm'
+    },
+    {
+      name : 'John Doe',
+      date : 'August 23, 2022',
+      timeDuration : '13',
+      time : '5:05pm'
+    },
+    {
+      name : 'John Doe',
+      date : 'August 23, 2022',
+      timeDuration : '13',
+      time : '5:05pm'
+    },
+    {
+      name : 'John Doe',
+      date : 'August 23, 2022',
+      timeDuration : '13',
+      time : '5:05pm'
+    },
+    {
+      name : 'John Doe',
+      date : 'August 23, 2022',
+      timeDuration : '13',
+      time : '5:05pm'
+    },
+    {
+      name : 'John Doe',
+      date : 'August 23, 2022',
+      timeDuration : '13',
+      time : '5:05pm'
+    },
+    {
+      name : 'John Doe',
+      date : 'August 23, 2022',
+      timeDuration : '13',
+      time : '5:05pm'
+    }
+  ]
+  
+  isConversationBtnClicked : boolean = true ;
 
+  onClickEvent_conv() {
+    this.isConversationBtnClicked = true;
+  }
+  onClickEvent_call() {
+    this.isConversationBtnClicked = false;
+  }
 
   ngOnInit(): void {
   }

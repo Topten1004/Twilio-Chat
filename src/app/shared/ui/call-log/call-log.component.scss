@@ -1,0 +1,93 @@
+.main {
+    height: 78px;
+    background: #F2F5FF;
+    border: 1px solid #0A423D ;
+    border-radius: 28px;
+    padding-left: 24px;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+
+    .name_date {
+        display: flex;
+        justify-content: space-between;
+        .name {
+            color: #0A423D;            
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        .date {
+            color: #646464;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+
+    .timeDuration {
+        display: flex;
+        justify-content: space-between;
+        .duration {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #646464;
+        }
+        .time {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+            color: #646464;            
+        }
+    }
+
+    // .active {
+    //     width: 7px;
+    //     height: 7px;
+    //     background-color: #FF6464;
+    //     border-radius: 3.5px;
+    //     outline: 6px solid rgba(255, 100, 100, 0.3);
+    //     position: absolute;
+    //     left: 23px;
+    //     top: 36px;
+    // }
+
+    // .content {
+    //     position: absolute;
+    //     left: 49px;
+    //     top: 15px;
+    //     right: 62px;
+    //     height: 49px;
+    //     font-family: 'Inter';
+    //     font-style: normal;
+    //     font-size: 14px;
+    //     line-height: 24px;
+    //     color: #0A423D;
+    //     font-weight: 700;
+    //     overflow: hidden;
+    //     span {
+    //         color: #A5A5A5;
+    //         font-weight: 400;
+    //     }
+    // }
+    // .timeDuration {
+    //     position: absolute;
+    //     right: 15px;
+    //     top: 15px;
+    // }
+
+    // .sent {
+    //     background: #D9D9D9;
+    //     color: #646464;
+    // }
+}
+
